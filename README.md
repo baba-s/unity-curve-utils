@@ -14,6 +14,10 @@ https://github.com/baba-s/unity-curve-utils/blob/master/UnityCurveUtils.unitypac
 
 ![](https://raw.githubusercontent.com/baba-s/unity-curve-utils/master/Screenshots/01_B_SplineCurve.png)
 
+```cs
+var point = UnityCurveUtils.B_SplineCurve( m_x1, m_y1, m_x2, m_y2, m_x3, m_y3, t );
+```
+
 ## ベジェ曲線
 
 ![](https://raw.githubusercontent.com/baba-s/unity-curve-utils/master/Screenshots/02_BezierCurve.png)
