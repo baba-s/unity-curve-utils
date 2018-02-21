@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 public static class UnityCurveUtils
 {
@@ -137,25 +138,33 @@ public static class UnityCurveUtils
 		);
 	}
 
-	////-----------------------------------------------------------------------------
-	//// 双曲線を求める
-	////-----------------------------------------------------------------------------
-	//public static float HyperbolaX( float a, float b, float theta )
-	//{
-	//	return a * cosh( theta );
-	//}
+	/// <summary>
+	/// 双曲線を求めます
+	/// </summary>
+	public static float HyperbolaX( float a, float b, float theta )
+	{
 
-	//public static float HyperbolaY( float a, float b, float theta )
-	//{
-	//	return b * sinh( theta );
-	//}
+		return a * ( float )Math.Cosh( theta );
+	}
 
-	//public static Vector2 Hyperbola2( float a, float b, float theta )
-	//{
-	//	return new Vector2(
-	//		HyperbolaX( a, b, theta ),
-	//		HyperbolaY( a, b, theta ) );
-	//}
+	/// <summary>
+	/// 双曲線を求めます
+	/// </summary>
+	public static float HyperbolaY( float a, float b, float theta )
+	{
+		return b * ( float )Math.Sinh( theta );
+	}
+
+	/// <summary>
+	/// 双曲線を求めます
+	/// </summary>
+	public static Vector2 Hyperbola( float a, float b, float theta )
+	{
+		return new Vector2(
+			HyperbolaX( a, b, theta ),
+			HyperbolaY( a, b, theta )
+		);
+	}
 
 	/// <summary>
 	/// 楕円を求めます
