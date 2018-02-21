@@ -2,6 +2,10 @@
 
 「UnityCurveUtils」は 18 種類の曲線アルゴリズムを使用できるユーティリティです  
 
+# 開発環境
+
+- Unity 2017.3.0f3
+
 # 導入方法
 
 1. 下記のページにアクセスして「UnityCurveUtils.unitypackage」をダウンロードします  
