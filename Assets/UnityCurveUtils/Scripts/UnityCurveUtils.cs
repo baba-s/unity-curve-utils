@@ -191,7 +191,6 @@ public static class UnityCurveUtils
 	/// </summary>
 	public static float HyperbolaX( float a, float b, float theta )
 	{
-
 		return a * ( float )Math.Cosh( theta );
 	}
 
