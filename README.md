@@ -8,6 +8,12 @@
 https://github.com/baba-s/unity-curve-utils/blob/master/UnityCurveUtils.unitypackage?raw=true
 2. ダウンロードした「UnityCurveUtils.unitypackage」を Unity プロジェクトにインポートします  
 
+# サンプルシーン
+
+![](https://raw.githubusercontent.com/baba-s/unity-curve-utils/master/Screenshots/00_Example.png)
+
+「Example」フォルダ内に、各曲線アルゴリズムの使用例が格納されています  
+
 # 曲線アルゴリズム一覧
 
 ## B-スプライン曲線
