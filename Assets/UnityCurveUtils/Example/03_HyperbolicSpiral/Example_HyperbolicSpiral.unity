@@ -230,7 +230,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lineRenderer: {fileID: 923427527}
-  m_a: 1
+  m_a: 5
 --- !u!4 &923427529
 Transform:
   m_ObjectHideFlags: 0
