@@ -26,7 +26,7 @@ public class Example_Cycloid : MonoBehaviour
 
 	private void OnGUI()
 	{
-		m_rm = ExampleUtils.Item( "動円の半径", m_rm );
-		m_scale = ExampleUtils.Item2( "大きさ", m_scale );
+		m_rm = ExampleUtils.ParamField( "動円の半径", m_rm );
+		m_scale = ExampleUtils.ScaleField( "大きさ", m_scale );
 	}
 }

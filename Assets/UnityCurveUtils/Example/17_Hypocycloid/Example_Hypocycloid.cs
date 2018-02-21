@@ -27,8 +27,8 @@ public class Example_Hypocycloid : MonoBehaviour
 
 	private void OnGUI()
 	{
-		m_rm = ExampleUtils.Item( "定円の半径", m_rm );
-		m_rd = ExampleUtils.Item( "動円の半径", m_rd );
-		m_scale = ExampleUtils.Item2( "大きさ", m_scale );
+		m_rm = ExampleUtils.ParamField( "定円の半径", m_rm );
+		m_rd = ExampleUtils.ParamField( "動円の半径", m_rd );
+		m_scale = ExampleUtils.ScaleField( "大きさ", m_scale );
 	}
 }

@@ -28,9 +28,9 @@ public class Example_Hypetrocoid : MonoBehaviour
 
 	private void OnGUI()
 	{
-		m_rc = ExampleUtils.Item( "定円の半径", m_rc );
-		m_rm = ExampleUtils.Item( "動円の半径", m_rm );
-		m_rd = ExampleUtils.Item( "描画点の半径", m_rd );
-		m_scale = ExampleUtils.Item2( "大きさ", m_scale );
+		m_rc = ExampleUtils.ParamField( "定円の半径", m_rc );
+		m_rm = ExampleUtils.ParamField( "動円の半径", m_rm );
+		m_rd = ExampleUtils.ParamField( "描画点の半径", m_rd );
+		m_scale = ExampleUtils.ScaleField( "大きさ", m_scale );
 	}
 }
