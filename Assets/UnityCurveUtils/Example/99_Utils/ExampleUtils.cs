@@ -2,6 +2,11 @@
 
 public static class ExampleUtils
 {
+	public static float PosField( string text, float value )
+	{
+		return FieldImpl( text, value, -5, 5 );
+	}
+
 	public static float ParamField( string text, float value )
 	{
 		return FieldImpl( text, value, -1, 1 );
@@ -16,7 +21,7 @@ public static class ExampleUtils
 	{
 		GUILayout.BeginHorizontal();
 		GUILayout.Label( text );
-		value = GUILayout.HorizontalSlider( value, 0, 5, GUILayout.Width( 200 ) );
+		value = GUILayout.HorizontalSlider( value, min, max, GUILayout.Width( 200 ) );
 		GUILayout.Label( value.ToString( "0.00" ) );
 		GUILayout.EndHorizontal();
 		return value;

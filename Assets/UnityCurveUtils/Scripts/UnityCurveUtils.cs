@@ -6,6 +6,13 @@ public static class UnityCurveUtils
 	/// <summary>
 	/// B-スプライン曲線を求めます
 	/// </summary>
+	/// <param name="x1">始点の X 座標</param>
+	/// <param name="y1">始点の Y 座標</param>
+	/// <param name="x2">制御点 の X 座標</param>
+	/// <param name="y2">制御点 の Y 座標</param>
+	/// <param name="x3">終点の X 座標</param>
+	/// <param name="y3">終点の Y 座標</param>
+	/// <param name="t">重み（ 0 ～ 1 ）</param>
 	public static float B_SplineCurveX( float x1, float y1, float x2, float y2, float x3, float y3, float t )
 	{
 		return Mathf.Pow( ( 1 - t ), 2 ) * x1 + 2 * t * ( 1 - t ) * x2 + Mathf.Pow( t, 2 ) * x3;
@@ -14,6 +21,13 @@ public static class UnityCurveUtils
 	/// <summary>
 	/// B-スプライン曲線を求めます
 	/// </summary>
+	/// <param name="x1">始点の X 座標</param>
+	/// <param name="y1">始点の Y 座標</param>
+	/// <param name="x2">制御点 の X 座標</param>
+	/// <param name="y2">制御点 の Y 座標</param>
+	/// <param name="x3">終点の X 座標</param>
+	/// <param name="y3">終点の Y 座標</param>
+	/// <param name="t">重み（ 0 ～ 1 ）</param>
 	public static float B_SplineCurveY( float x1, float y1, float x2, float y2, float x3, float y3, float t )
 	{
 		return Mathf.Pow( ( 1 - t ), 2 ) * y1 + 2 * t * ( 1 - t ) * y2 + Mathf.Pow( t, 2 ) * y3;
@@ -22,6 +36,13 @@ public static class UnityCurveUtils
 	/// <summary>
 	/// B-スプライン曲線を求めます
 	/// </summary>
+	/// <param name="x1">始点の X 座標</param>
+	/// <param name="y1">始点の Y 座標</param>
+	/// <param name="x2">制御点 の X 座標</param>
+	/// <param name="y2">制御点 の Y 座標</param>
+	/// <param name="x3">終点の X 座標</param>
+	/// <param name="y3">終点の Y 座標</param>
+	/// <param name="t">重み（ 0 ～ 1 ）</param>
 	public static Vector2 B_SplineCurve( float x1, float y1, float x2, float y2, float x3, float y3, float t )
 	{
 		return new Vector2(
@@ -33,6 +54,15 @@ public static class UnityCurveUtils
 	/// <summary>
 	/// ベジェ曲線を求めます
 	/// </summary>
+	/// <param name="x1">始点の X 座標</param>
+	/// <param name="y1">始点の Y 座標</param>
+	/// <param name="x2">制御点1 の X 座標</param>
+	/// <param name="y2">制御点1 の Y 座標</param>
+	/// <param name="x3">制御点2 の X 座標</param>
+	/// <param name="y3">制御点2 の Y 座標</param>
+	/// <param name="x4">終点の X 座標</param>
+	/// <param name="y4">終点の Y 座標</param>
+	/// <param name="t">重み（ 0 ～ 1 ）</param>
 	public static float BezierCurveX( float x1, float y1, float x2, float y2, float x3, float y3, float x4, float y4, float t )
 	{
 		return Mathf.Pow( ( 1 - t ), 3 ) * x1 + 3 * Mathf.Pow( ( 1 - t ), 2 ) * t * x2 + 3 * ( 1 - t ) * Mathf.Pow( t, 2 ) * x3 + Mathf.Pow( t, 3 ) * x4;
@@ -41,6 +71,15 @@ public static class UnityCurveUtils
 	/// <summary>
 	/// ベジェ曲線を求めます
 	/// </summary>
+	/// <param name="x1">始点の X 座標</param>
+	/// <param name="y1">始点の Y 座標</param>
+	/// <param name="x2">制御点1 の X 座標</param>
+	/// <param name="y2">制御点1 の Y 座標</param>
+	/// <param name="x3">制御点2 の X 座標</param>
+	/// <param name="y3">制御点2 の Y 座標</param>
+	/// <param name="x4">終点の X 座標</param>
+	/// <param name="y4">終点の Y 座標</param>
+	/// <param name="t">重み（ 0 ～ 1 ）</param>
 	public static float BezierCurveY( float x1, float y1, float x2, float y2, float x3, float y3, float x4, float y4, float t )
 	{
 		return Mathf.Pow( ( 1 - t ), 3 ) * y1 + 3 * Mathf.Pow( ( 1 - t ), 2 ) * t * y2 + 3 * ( 1 - t ) * Mathf.Pow( t, 2 ) * y3 + Mathf.Pow( t, 3 ) * y4;
@@ -49,6 +88,15 @@ public static class UnityCurveUtils
 	/// <summary>
 	/// ベジェ曲線を求めます
 	/// </summary>
+	/// <param name="x1">始点の X 座標</param>
+	/// <param name="y1">始点の Y 座標</param>
+	/// <param name="x2">制御点1 の X 座標</param>
+	/// <param name="y2">制御点1 の Y 座標</param>
+	/// <param name="x3">制御点2 の X 座標</param>
+	/// <param name="y3">制御点2 の Y 座標</param>
+	/// <param name="x4">終点の X 座標</param>
+	/// <param name="y4">終点の Y 座標</param>
+	/// <param name="t">重み（ 0 ～ 1 ）</param>
 	public static Vector2 BezierCurve( float x1, float y1, float x2, float y2, float x3, float y3, float x4, float y4, float t )
 	{
 		return new Vector2(
