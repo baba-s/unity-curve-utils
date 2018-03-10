@@ -1,4 +1,4 @@
-[日本語の Readme はこちら](https://github.com/baba-s/unity-curve-utils/blob/master/README%20_JP.md)  
+[日本語の Readme はこちら](https://github.com/baba-s/unity-curve-utils/blob/master/README_JP.md)  
 
 # UnityCurveUtils
 
