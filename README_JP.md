@@ -1,28 +1,26 @@
-[日本語の Readme はこちら](https://github.com/baba-s/unity-curve-utils/blob/master/README%20_JP.md)  
-
 # UnityCurveUtils
 
-A utility that can use 18 kinds of curve algorithm.  
+「UnityCurveUtils」は 18 種類の曲線アルゴリズムを使用できるユーティリティです  
 
-# Version
+# 開発環境
 
 - Unity 2017.3.0f3
 
-# Install
+# 導入方法
 
-1. Go to the following page and download "UnityCurveUtils.unitypackage".  
+1. 下記のページにアクセスして「UnityCurveUtils.unitypackage」をダウンロードします  
 https://github.com/baba-s/unity-curve-utils/blob/master/UnityCurveUtils.unitypackage?raw=true
-2. Import the downloaded "UnityCurveUtils.unitypackage" into the Unity project.  
+2. ダウンロードした「UnityCurveUtils.unitypackage」を Unity プロジェクトにインポートします  
 
-# Example
+# サンプルシーン
 
 ![](https://raw.githubusercontent.com/baba-s/unity-curve-utils/master/Screenshots/00_Example.png)
 
-An example of use of each curve algorithm is stored in "Example" folder.  
+「Example」フォルダ内に、各曲線アルゴリズムの使用例が格納されています  
 
-# Algorithm list
+# 曲線アルゴリズム一覧
 
-## B-Spline curve
+## B-スプライン曲線
 
 ![](https://raw.githubusercontent.com/baba-s/unity-curve-utils/master/Screenshots/01_B_SplineCurve.png)
 
@@ -30,7 +28,7 @@ An example of use of each curve algorithm is stored in "Example" folder.
 var point = UnityCurveUtils.B_SplineCurve( x1, y1, x2, y2, x3, y3, t );
 ```
 
-## Bezier curve
+## ベジェ曲線
 
 ![](https://raw.githubusercontent.com/baba-s/unity-curve-utils/master/Screenshots/02_BezierCurve.png)
 
@@ -38,7 +36,7 @@ var point = UnityCurveUtils.B_SplineCurve( x1, y1, x2, y2, x3, y3, t );
 var point = UnityCurveUtils.BezierCurve( x1, y1, x2, y2, x3, y3, x4, y4, t );
 ```
 
-## Hyperbolic spiral
+## 双曲螺旋
 
 ![](https://raw.githubusercontent.com/baba-s/unity-curve-utils/master/Screenshots/03_HyperbolicSpiral.png)
 
@@ -46,7 +44,7 @@ var point = UnityCurveUtils.BezierCurve( x1, y1, x2, y2, x3, y3, x4, y4, t );
 var point = UnityCurveUtils.HyperbolicSpiral( a, c theta );
 ```
 
-## Witch of agnesi
+## アーネシの曲線
 
 ![](https://raw.githubusercontent.com/baba-s/unity-curve-utils/master/Screenshots/04_WitchOfAgnesi.png)
 
@@ -54,7 +52,7 @@ var point = UnityCurveUtils.HyperbolicSpiral( a, c theta );
 var point = UnityCurveUtils.WitchOfAgnesi( a, theta );
 ```
 
-## Folium of descartes
+## デカルトの正葉線
 
 ![](https://raw.githubusercontent.com/baba-s/unity-curve-utils/master/Screenshots/05_FoliumOfDescartes.png)
 
@@ -62,7 +60,7 @@ var point = UnityCurveUtils.WitchOfAgnesi( a, theta );
 var point = UnityCurveUtils.FoliumOfDescartes( a, theta );
 ```
 
-## Ellipse
+## 楕円
 
 ![](https://raw.githubusercontent.com/baba-s/unity-curve-utils/master/Screenshots/06_Ellipse.png)
 
@@ -70,7 +68,7 @@ var point = UnityCurveUtils.FoliumOfDescartes( a, theta );
 var point = UnityCurveUtils.Ellipse( a, b, theta );
 ```
 
-## Hyperbola
+## 双曲線
 
 ![](https://raw.githubusercontent.com/baba-s/unity-curve-utils/master/Screenshots/07_Hyperbola.png)
 
@@ -78,7 +76,7 @@ var point = UnityCurveUtils.Ellipse( a, b, theta );
 var point = UnityCurveUtils.Hyperbola( a, b, theta );
 ```
 
-## Involute of circle
+## インボリュート曲線
 
 ![](https://raw.githubusercontent.com/baba-s/unity-curve-utils/master/Screenshots/08_InvoluteOfCircle.png)
 
@@ -86,7 +84,7 @@ var point = UnityCurveUtils.Hyperbola( a, b, theta );
 var point = UnityCurveUtils.InvoluteOfCircle( a, theta );
 ```
 
-## Strophoid
+## ストロフォイド
 
 ![](https://raw.githubusercontent.com/baba-s/unity-curve-utils/master/Screenshots/09_Strophoid.png)
 
@@ -94,7 +92,7 @@ var point = UnityCurveUtils.InvoluteOfCircle( a, theta );
 var point = UnityCurveUtils.Strophoid( a, theta );
 ```
 
-## Conchoid
+## コンコイド
 
 ![](https://raw.githubusercontent.com/baba-s/unity-curve-utils/master/Screenshots/10_Conchoid.png)
 
@@ -102,7 +100,7 @@ var point = UnityCurveUtils.Strophoid( a, theta );
 var point = UnityCurveUtils.Conchoid( a, l, theta );
 ```
 
-## Cissoid
+## シッソイド
 
 ![](https://raw.githubusercontent.com/baba-s/unity-curve-utils/master/Screenshots/11_Cissoid.png)
 
@@ -110,7 +108,7 @@ var point = UnityCurveUtils.Conchoid( a, l, theta );
 var point = UnityCurveUtils.Cissoid( a, theta );
 ```
 
-## Lissajous curve
+## リサジュー曲線
 
 ![](https://raw.githubusercontent.com/baba-s/unity-curve-utils/master/Screenshots/12_LissajousCurve.png)
 
@@ -118,7 +116,7 @@ var point = UnityCurveUtils.Cissoid( a, theta );
 var point = UnityCurveUtils.LissajousCurve( A, B, a, b, delta, theta );
 ```
 
-## Trochoid
+## トロコイド
 
 ![](https://raw.githubusercontent.com/baba-s/unity-curve-utils/master/Screenshots/13_Trochoid.png)
 
@@ -126,7 +124,7 @@ var point = UnityCurveUtils.LissajousCurve( A, B, a, b, delta, theta );
 var point = UnityCurveUtils.Trochoid( rm, theta, rd );
 ```
 
-## Epitrocoid
+## 外トロコイド
 
 ![](https://raw.githubusercontent.com/baba-s/unity-curve-utils/master/Screenshots/14_Epitrocoid.png)
 
@@ -134,7 +132,7 @@ var point = UnityCurveUtils.Trochoid( rm, theta, rd );
 var point = UnityCurveUtils.Epitrocoid( rc, rm, theta, rd );
 ```
 
-## Hypetrocoid
+## 内トロコイド
 
 ![](https://raw.githubusercontent.com/baba-s/unity-curve-utils/master/Screenshots/15_Hypetrocoid.png)
 
@@ -142,7 +140,7 @@ var point = UnityCurveUtils.Epitrocoid( rc, rm, theta, rd );
 var point = UnityCurveUtils.Hypetrocoid( rc, rm, theta, rd );
 ```
 
-## Cycloid
+## サイクロイド
 
 ![](https://raw.githubusercontent.com/baba-s/unity-curve-utils/master/Screenshots/16_Cycloid.png)
 
@@ -150,7 +148,7 @@ var point = UnityCurveUtils.Hypetrocoid( rc, rm, theta, rd );
 var point = UnityCurveUtils.Cycloid( rm, theta );
 ```
 
-## Epicycloid
+## 外サイクロイド
 
 ![](https://raw.githubusercontent.com/baba-s/unity-curve-utils/master/Screenshots/17_Epicycloid.png)
 
@@ -158,7 +156,7 @@ var point = UnityCurveUtils.Cycloid( rm, theta );
 var point = UnityCurveUtils.Epicycloid( rm, rd, theta );
 ```
 
-## Hypocycloid
+## 内サイクロイド
 
 ![](https://raw.githubusercontent.com/baba-s/unity-curve-utils/master/Screenshots/18_Hypocycloid.png)
 
