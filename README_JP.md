@@ -4,13 +4,7 @@
 
 # 開発環境
 
-- Unity 2017.3.0f3
-
-# 導入方法
-
-1. 下記のページにアクセスして「UnityCurveUtils.unitypackage」をダウンロードします  
-https://github.com/baba-s/unity-curve-utils/blob/master/UnityCurveUtils.unitypackage?raw=true
-2. ダウンロードした「UnityCurveUtils.unitypackage」を Unity プロジェクトにインポートします  
+- Unity 2018.3.0f2
 
 # サンプルシーン
 
