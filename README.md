@@ -4,6 +4,12 @@
 
 A utility that can use 18 kinds of curve algorithm.  
 
+[![](https://img.shields.io/github/release/baba-s/unity-curve-utils.svg?label=latest%20version)](https://github.com/baba-s/unity-curve-utils/releases)
+[![](https://img.shields.io/github/release-date/baba-s/unity-curve-utils.svg)](https://github.com/baba-s/unity-curve-utils/releases)
+![](https://img.shields.io/badge/Unity-2017.4%2B-red.svg)
+![](https://img.shields.io/badge/.NET-3.5%2B-orange.svg)
+[![](https://img.shields.io/github/license/baba-s/unity-curve-utils.svg)](https://github.com/baba-s/unity-curve-utils/blob/master/LICENSE)
+
 ## Version
 
 - Unity 2018.3.0f2
