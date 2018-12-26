@@ -46,7 +46,7 @@ var point = UnityCurveUtils.HyperbolicSpiral( a, c theta );
 var point = UnityCurveUtils.WitchOfAgnesi( a, theta );
 ```
 
-## デカルトの正葉線
+### デカルトの正葉線
 
 ![](https://raw.githubusercontent.com/baba-s/unity-curve-utils/master/Screenshots/05_FoliumOfDescartes.png)
 
